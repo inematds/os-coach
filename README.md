@@ -1,3 +1,5 @@
+<p align="right"><b>🇺🇸 English</b> · <a href="README.pt-BR.md">🇧🇷 Português</a></p>
+
 # /os-coach
 
 A Claude Code skill that hand-holds a non-technical person through building their own **agentic OS**, one layer at a time, in whatever folder they run it in. It does the technical work for them. They make the decisions.
