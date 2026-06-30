@@ -1,5 +1,9 @@
 <p align="right"><a href="README.md">🇧🇷 Português</a> · <b>🇺🇸 English</b></p>
 
+<p align="center">
+  <img src="assets/os-coach-banner.png" alt="OS Coach, the AI Systems Architect: you build the base. The six layers Identity, Context, Rules, Skills, Tools, and Agents forming the Agentic OS, under the motto architecture, logic, structure. It is not about executing, it is about structuring the foundation." width="100%">
+</p>
+
 # /os-coach
 
 📘 **Visual guide (landing + walkthrough):** [inematds.github.io/os-coach](https://inematds.github.io/os-coach/)

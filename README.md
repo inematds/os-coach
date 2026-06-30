@@ -1,5 +1,9 @@
 <p align="right"><b>🇧🇷 Português</b> · <a href="README.en.md">🇺🇸 English</a></p>
 
+<p align="center">
+  <img src="assets/os-coach-banner.png" alt="OS Coach, o Arquiteto de Sistemas de IA: você constrói a base. As seis camadas Identidade, Contexto, Regras, Skills, Tools e Agentes formando o Agentic OS, sob o lema arquitetura, lógica e estrutura. Não é sobre executar, é sobre estruturar a fundação." width="100%">
+</p>
+
 # /os-coach
 
 📘 **Guia visual (landing + passo a passo):** [inematds.github.io/os-coach](https://inematds.github.io/os-coach/)
