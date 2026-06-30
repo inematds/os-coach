@@ -184,6 +184,20 @@ As referências são carregadas só quando necessário, então o controlador fic
 
 ---
 
+## OS Coach × OpenClaw: você constrói a base, ele roda o agente
+
+O OS Coach **não executa** tarefas por você no dia a dia. Ele **estrutura a fundação**: Identidade, Substrato, Regras, Skills, Ferramentas e Agentes, a arquitetura sobre a qual um agente confiável consegue rodar. **Primeiro você constrói a base; só depois um agente entra em execução em cima dela.**
+
+É aí que entra uma plataforma de execução como o **OpenClaw** (o "Jarvis" que roda os agentes): ela pega a base que você preparou aqui e a coloca para trabalhar, mensagens (WhatsApp, Telegram, e-mail), automações, ferramentas e dashboards. **O OS Coach prepara a base; o OpenClaw roda o agente.**
+
+<p align="center">
+  <img src="assets/os-coach-vs-openclaw.png" alt="OS Coach versus OpenClaw: à esquerda o OS Coach constrói a base (arquitetura, lógica e estrutura: Identidade, Contexto, Regras, Skills, Tools, Agentes, formando o Agentic OS); à direita o OpenClaw roda o agente em execução (mensagens, automações, ferramentas e dashboards, monitorando, tomando ações, aprendendo e entregando resultados)" width="100%">
+</p>
+
+> **Você constrói a base. Ele roda o agente.** O erro nº 1 é pular direto para a execução sem fundação, e é por isso que o OS Coach vem primeiro.
+
+---
+
 ## Perguntas frequentes
 
 **Eu preciso saber programar?**

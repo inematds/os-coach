@@ -182,6 +182,20 @@ The references are loaded only when needed, so the controller stays lean.
 
 ---
 
+## OS Coach × OpenClaw: you build the base, it runs the agent
+
+OS Coach **does not execute** day-to-day tasks for you. It **structures the foundation**: Identity, Substrate, Rules, Skills, Tools, and Agents, the architecture a reliable agent can run on. **First you build the base; only then does an agent run on top of it.**
+
+That is where a runtime platform like **OpenClaw** (the "Jarvis" that runs the agents) comes in: it takes the base you prepared here and puts it to work, messages (WhatsApp, Telegram, email), automations, tools, and dashboards. **OS Coach prepares the base; OpenClaw runs the agent.**
+
+<p align="center">
+  <img src="assets/os-coach-vs-openclaw.png" alt="OS Coach versus OpenClaw: on the left OS Coach builds the base (architecture, logic, and structure: Identity, Context, Rules, Skills, Tools, Agents, forming the Agentic OS); on the right OpenClaw runs the live agent (messages, automations, tools, and dashboards, monitoring, taking actions, learning, and delivering results)" width="100%">
+</p>
+
+> **You build the base. It runs the agent.** The #1 mistake is jumping straight to execution with no foundation, which is why OS Coach comes first.
+
+---
+
 ## FAQ
 
 **Do I need to know how to code?**
