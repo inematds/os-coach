@@ -59,7 +59,7 @@ Parse the **first word** of `$ARGUMENTS` as the subcommand and the **rest** as i
 
 - **No memory yet, and they ran something other than `start` or `help`:** if memory shows `NO_MEMORY_YET` and they ran `next`, `status`, `layer`, or `audit`, do not guess. Warmly tell them no OS has been started in this folder, and to run `/os-coach start <their goal>` first.
 - **`start` when memory already exists:** never silently overwrite. Show the existing goal and current layer, and ask whether to continue where they left off or start fresh.
-- **`next` when every layer is already `solid`:** congratulate them, do not invent a seventh layer. Suggest `/os-coach audit` to pressure-test against their goal, or `/os-coach layer <name>` to deepen one.
+- **`next` when every layer is already `solid`:** congratulate them, do not invent a seventh layer. Suggest `/os-coach audit` to pressure-test against their goal, or `/os-coach layer <name>` to deepen one. If they want the OS to work alone for hours on one goal, offer the optional "long runs" section at the end of `references/layer-playbook.md` (it is an add-on, not a seventh layer).
 - **A layer that does not apply to their goal yet:** mark it `not started` with a one-line reason rather than inventing busywork, then move on.
 
 ## The Start flow

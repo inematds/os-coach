@@ -64,6 +64,20 @@ You only ever take one small step per turn. The coach asks 2 to 3 plain-English 
 
 ---
 
+## What's new in October 2026
+
+The six layers are the same. Coaching and the audit now check for what the INEMA ecosystem learned since June:
+
+- **Portable, self-learning identity:** an `AGENTS.md` so Codex and other agents read the same OS, plus `## Self-learning` + `## Lessons` sections in `CLAUDE.md` (every correction becomes a one-line rule).
+- **Substrate that survives sessions:** `context/current-state.md`, `tasks/current.md` and `handoffs/latest.md` (with a dated copy in `handoffs/history/`).
+- **Rules with permission levels and a failure log:** N0 (only talks) to N4 (acts alone, silently), and a `FALHAS.md` with one line per mistake; a repeated mistake becomes a fixed rule or a hook.
+- **Skills, Tools and Agents:** a clear trigger on each skill, a permission level on each connection, the model chosen in one file, and a second reviewer before anything important ships.
+- **Optional, after Agents:** a `longrun/` folder with a goal and proof of done so the OS can work alone for hours ([Long-run kit](https://inematds.github.io/execucao-longa/guia/)).
+
+Full course covering all of this: [AI Operating Systems Engineering (AIOS)](https://inematds.github.io/oscoach/en/).
+
+---
+
 ## Commands
 
 ```

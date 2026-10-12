@@ -18,6 +18,18 @@ Use four levels. Be honest. Most early OSes are mostly Missing or Started, and t
 - **Solid** - real, specific, and passes the layer's full done-check (it answers every part of the user's hard question with the data on hand, not just the easy half).
 - **Compounding** - solid AND it gets better over time on its own (the substrate grows, skills are versioned, audits feed back in).
 
+### 2026 signals (raise a layer from Started to Solid, or Solid to Compounding)
+
+Check these while scoring; mention a missing one as a concrete move only when it serves the goal:
+
+- **Identity:** `AGENTS.md` (or equivalent) gives a second agent the same picture; `## Lessons` exists and has real lines → Compounding.
+- **Substrate:** `context/current-state.md` + `handoffs/latest.md` exist and are recent (the OS can resume without the person re-explaining).
+- **Rules:** risky actions carry a permission level (N0–N4); a failure log exists; failures that repeated were promoted to `never.md` or a hook → Compounding.
+- **Skills:** each skill has a clear trigger; no two skills fight for the same request; unused ones are parked.
+- **Tools:** each connection has a permission level; the model choice lives in one config file.
+- **Agents:** delegation picks helper by job size; important output gets a second reviewer.
+- **Long runs (optional, only if they use them):** `goal.md` checks are `command → expected output` and cannot be met by a shortcut.
+
 ## The non-generic test
 
 Every line you write must fail if pasted into a stranger's audit. If a sentence would be true for any OS, rewrite it with their specifics.

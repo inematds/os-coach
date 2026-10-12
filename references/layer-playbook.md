@@ -19,7 +19,9 @@ Always tailor the artifact to **their goal** from `memory.md`. Build the file/fo
 
 **You build:** `CLAUDE.md` in this folder. Keep it lean (aim for under 30 lines). Include: who it is, who it serves, the goal, 2-3 defaults (how it should behave), and 2-3 hard refusals. Write it in their voice, grounded in their answers.
 
-**Done-check:** A stranger could read `CLAUDE.md` and correctly describe what this OS is for and one thing it will refuse to do.
+**Make it portable (2026 update).** The same identity should serve any agent, not just one tool. Offer to add a short `AGENTS.md` (read by Codex and other agents) that says the same thing or points to `CLAUDE.md`, so the "brain" lives in the folder, not in one product. Also add two tiny sections at the end of `CLAUDE.md`: `## Self-learning` ("when I correct you, add the lesson as a one-line rule under Lessons before continuing") and an empty `## Lessons`. Corrections then become rules instead of repeated mistakes.
+
+**Done-check:** A stranger could read `CLAUDE.md` and correctly describe what this OS is for and one thing it will refuse to do. Bonus for `solid`: a second agent (e.g. Codex reading `AGENTS.md`) would get the same picture, and `## Lessons` exists.
 
 **Common mistake:** Making it long and generic. Cut until it hurts. A bloated identity confuses the OS.
 
@@ -46,6 +48,8 @@ Offer to actually harvest and distill if they have the material ready. Note in `
 
 **Done-check:** `substrate/compendium.md` exists, is organized rather than a pile, and can answer **every part** of the hard question above with the data actually on hand. If the question has more than one part (for example "what is due soon AND what am I already late on") and a required input is still missing, the layer is `in progress`, not `solid`. Say plainly which part it cannot yet answer and what input would fix it.
 
+**Portable working context (2026 update).** Besides the knowledge, the OS needs to remember *where the work stands* between sessions and between agents. Offer the small set any agent can read before acting: `context/current-state.md` (what is true right now), `tasks/current.md` (what is being done) and `handoffs/latest.md` (the note left at the end of the last session, with a dated copy in `handoffs/history/` that is never overwritten). Explain the rhythm in plain words: read these first when you sit down, write the handoff before you leave or before the conversation gets too long.
+
 **Common mistake:** Trying to dump everything in raw. Distill. A small, clean compendium beats a giant messy one.
 
 ---
@@ -63,7 +67,11 @@ Offer to actually harvest and distill if they have the material ready. Note in `
 
 **You build:** a `rules/` folder with `always.md` (constraints it must follow) and `never.md` (hard stops), written from their answers. If they named an automatic behavior, note it as a hook to add later and describe what it would guard. If they have private data, add a "never commit or share" rule.
 
-**Done-check:** The worst-mistake answer is written as a clear never-rule, and at least one automatic reflex is identified.
+**Fences that learn (2026 update).** Two more pieces, both tiny:
+- **Permission levels.** For each kind of action, write how free the OS is: N0 only talks · N1 prepares, the human executes · N2 executes after asking, every time · N3 executes alone and reports · N4 executes alone, silently. Most beginners want reading at N4 and anything that sends, pays or deletes at N1 or N2.
+- **A failure log.** `FALHAS.md` (or `failures.md`): one line per real failure, `date | what broke | smallest fix | prompt or infra`. After about ten lines the pattern is obvious and the worst ones graduate into `never.md` or a hook. Add "an existing key or password is not permission to use a paid service" when money is involved.
+
+**Done-check:** The worst-mistake answer is written as a clear never-rule, and at least one automatic reflex is identified. For `solid`: the risky actions have a permission level, and a failure log exists.
 
 **Common mistake:** Vague rules ("be careful"). Make them concrete and testable ("never blend two clients' numbers").
 
@@ -84,6 +92,8 @@ Offer to actually harvest and distill if they have the material ready. Note in `
 
 **Done-check:** One real, repeated job is written as a skill with clear steps and a "what good looks like" line.
 
+**Keep the shelf clean (2026 update).** Every skill needs a clear trigger in its description. If two skills would answer the same request, make one of them run only when called by name. Skills nobody uses move to a reserve folder instead of cluttering the list. If they also use Codex, the skill can live in one source and be linked into both places.
+
 **Common mistake:** Trying to write ten skills at once, or writing a skill for something they have never actually done by hand. Earn it first.
 
 ---
@@ -102,6 +112,8 @@ Offer to actually harvest and distill if they have the material ready. Note in `
 **You build:** a `tools.md` that lists each connection, what it is for, and read-only versus write, plus a one-line "how to wire it later" note. For each source, help them decide the simplest path: a ready-made skill, a small command-line wrapper, or an existing connector. Keep all secrets out of the folder.
 
 **Done-check:** Every source the goal needs is listed with its access level, and no secrets live in the folder.
+
+**2026 update.** Put the permission level (N0–N4, see Rules) next to each line of `tools.md`. Prefer connections that run on the subscription they already pay for over new paid APIs. If several tools or bots pick an AI model, keep the model name in ONE config file and change it there, never inside each tool.
 
 **Common mistake:** Wiring write-access everywhere. Default to read-only. Add write only where it is truly needed.
 
@@ -122,7 +134,21 @@ Offer to actually harvest and distill if they have the material ready. Note in `
 
 **Done-check:** One real orchestrated routine is captured as an agent with a clear review gate.
 
+**2026 update.** When an agent hands work to helpers, it should pick the helper by the job: bulk, mechanical work to a smaller model with closed instructions; decisions stay with the main agent. For anything important, a second reviewer (another agent or another model) attacks the plan before it ships.
+
 **Common mistake:** Building agents before skills exist, or building a "do everything" agent. One agent, one clear role.
+
+---
+
+## Beyond the six layers: long runs (offer only after Agents is solid)
+
+**Plain words:** Letting the OS work for hours on one goal without getting lost.
+
+**Analogy:** Leaving a contractor alone for the day: you agree on what "finished" looks like and how they will prove it, they keep a notebook of where they are, and they call you if they get stuck three times.
+
+**You build (only if asked):** a `longrun/<date>-<slug>/` folder with `goal.md` (one-sentence result + checks written as `command → expected output`, covering it works, nothing else broke, and it did not touch what it should not), `state.md`, `plan.md` and `progress.md`. Stop-and-call-the-human rules: three cycles without measurable progress, repeating "I'll finish and commit" without finishing, or a third context compaction. Full kit: https://inematds.github.io/execucao-longa/guia/
+
+**Done-check:** `goal.md` cannot be satisfied by a shortcut (e.g. "0 failures AND at least N tests AND tests folder untouched", not just "0 failures").
 
 ---
 

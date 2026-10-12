@@ -66,6 +66,20 @@ Você dá sempre só um pequeno passo por vez. O treinador faz 2 ou 3 perguntas 
 
 ---
 
+## Novidades de outubro de 2026
+
+As seis camadas são as mesmas. O treino e a auditoria passaram a cobrar o que o ecossistema INEMA aprendeu desde junho:
+
+- **Identidade portátil e que aprende:** `AGENTS.md` para o Codex e outros agentes lerem o mesmo OS, e as seções `## Self-learning` + `## Lessons` no `CLAUDE.md` (cada correção vira regra de uma linha).
+- **Substrato que atravessa sessões:** `context/current-state.md`, `tasks/current.md` e `handoffs/latest.md` (com cópia datada em `handoffs/history/`).
+- **Regras com nível de permissão e registro de falhas:** N0 (só conversa) até N4 (age sozinho, sem aviso), e um `FALHAS.md` com uma linha por erro; o erro que repete vira regra fixa ou gancho.
+- **Skills, Tools e Agentes:** gatilho claro em cada skill, nível de permissão em cada conexão, modelo escolhido num arquivo só, e um segundo revisor antes do que é importante sair.
+- **Opcional, depois dos Agentes:** uma pasta `longrun/` com objetivo e prova de pronto para o OS trabalhar horas sozinho ([kit Execução Longa](https://inematds.github.io/execucao-longa/guia/)).
+
+Curso completo com todos esses pontos: [Engenharia de Sistemas Operacionais de IA (AIOS)](https://inematds.github.io/oscoach/).
+
+---
+
 ## Comandos
 
 ```
